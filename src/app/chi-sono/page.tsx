@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { getDemoParams } from "@/lib/demo-params";
 import { SmartLink } from "@/components/smart-link";
+import { getDemoParams } from "@/lib/demo-params";
 
 export const metadata = { title: "Chi Sono | Lumina Psicologo" };
 
@@ -37,25 +37,33 @@ export default async function ChiSonoPage({
               {params.name} <span className="text-foreground/50 font-normal">| {params.fieldDisplay}</span>
             </h2>
             <p className="mb-4">
-              La mia passione per la psicologia nasce dal desiderio profondo di comprendere l'essere umano in tutte le sue sfaccettature. 
-              Nel corso della mia carriera, ho affinato un approccio terapeutico che integra competenze cliniche rigorose con una reale 
-              ed empatica presenza relazionale.
+              Per me, l&apos;aspetto principale è l&apos;accoglienza. Far sentire ogni persona a proprio agio e sicura è il primo passo per instaurare un rapporto di reciproca fiducia tra cliente e terapeuta. 
             </p>
             <p className="mb-4">
-              Mi sono specializzato attraverso anni di studio e pratica clinica, sviluppando una solida esperienza nel trattamento 
-              delle {params.fieldDisplay.toLowerCase()} e delle difficoltà emotive in generale. Il mio obiettivo principale è fornire uno spazio sicuro dove 
-              i pazienti possano esplorare se stessi senza il timore di essere giudicati.
+              Il percorso di psicoterapia può essere molto duro in certi momenti, ma la persona che si rivolge a me come terapeuta sa che non sarà sola in questo percorso. Io vedo la terapia come un aiutare la persona a liberarsi dei pesi inutili che si porta dietro, non come un aggiungere nuove nozioni e conoscenze. Solo liberandosi delle costrizioni e delle gabbie, la persona sarà finalmente libera di essere se stessa.
             </p>
+            <p className="mb-8 font-medium">
+              Plasmo la terapia assieme al cliente in base ai suoi bisogni ed esigenze.
+            </p>
+
+            <h3 className="text-xl font-medium text-secondary-foreground mb-4">L&apos;Approccio: Umanistico Corporeo Integrato</h3>
+            <p className="mb-4">
+              Seguo un approccio umanistico e corporeo integrato. In quest&apos;ottica, corpo, psiche e relazioni di ogni persona sono un unico insieme integrato, e la persona considerata nella sua interezza (approccio olistico). 
+            </p>
+            <p className="mb-4">
+              Fondamentale è l&apos;attenzione data al QUI ed ORA e al vissuto emotivo della persona, elementi che vengono riletti e rielaborati anche attraverso il corpo. Ho avuto molti maestri, e non considero nessuno di essi perfetto. Nemmeno io sono perfetto, e continuo ad imparare ogni giorno. Spesso miei maestri inconsapevoli sono le stesse persone che si rivolgono a me, ognuno mi insegna qualcosa.
+            </p>
+
+            <h3 className="text-xl font-medium text-secondary-foreground mb-4">Perché scegliere me?</h3>
             <p className="mb-8">
-              Lavorando insieme, cercheremo non solo di alleviare il sintomo o il disagio immediato, ma di rintracciare le radici 
-              profonde delle dinamiche interiori, promuovendo un cambiamento autentico e duraturo.
+              Esistono tantissimi approcci, ognuno diverso. E all&apos;interno di ogni approccio, ogni terapeuta è diverso, quindi ognuno ha qualcosa che lo differenzia dalla concorrenza, e le differenze sono davvero tante, troppe. Posso parlare solo per me, quindi, e dire che sono una persona coscienziosa e affidabile. Nella terapia prendo il tempo necessario alla persona, ma mai più di quello che realmente serve.
             </p>
             
             <SmartLink
               href="/contatti"
-              className="inline-block bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 rounded-md text-lg font-medium transition-all shadow-md mt-4 no-underline"
+              className="inline-block bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 rounded-md text-lg font-medium transition-all shadow-md no-underline"
             >
-              Prenota un primo colloquio
+              Richiedi un consulto
             </SmartLink>
           </div>
         </div>
